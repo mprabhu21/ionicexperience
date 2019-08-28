@@ -1,0 +1,7 @@
+{
+  "name": "iworld",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

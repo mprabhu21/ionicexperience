@@ -1,0 +1,272 @@
+.home {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll 2px -24px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.settings {
+	background:url(../images/glyphicons_halflings_blue.png) no-repeat scroll -431px 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.logout {
+	background:url(../images/glyphicons_halflings_blue.png) no-repeat scroll -383px 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.email {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -73px 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.alerts {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -49px -143px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.smtp {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -73px -119px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.social {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll 2px -71px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.payment_settings {
+	background:url(../images/glyphicons_halflings_blue.png) no-repeat scroll -431px 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.payment_trans {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -168px -167px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.image {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -457px -49px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.fund {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -360px -48px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.deals {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -97px -143px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.customer {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -168px 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.merchant {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -24px -120px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.country {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll 0px -48px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.city {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -25px -48px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.category {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -50px -48px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.blog {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -335px -144px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.cms {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -22px -144px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.send {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -22px -166px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.contact {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -96px -167px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.validate {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -119px -166px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.symbol {
+	background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -456px -72px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.shops
+{
+                                background:url(../images/glyphicons_halflings_white.png) no-repeat scroll -97px -167px rgba(0, 0, 0, 0);
+	float: left;
+	height: 15px;
+	margin: 0px 8px 4px 5px;
+	width: 15px;
+}
+.listTab img{
+    cursor: pointer;
+} 
+//for Tables
+.tableDiv {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.tableDiv table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:95%;
+	height:100%;
+	margin:0px;padding:0px;
+}.tableDiv tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.tableDiv table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.tableDiv table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.tableDiv tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+.tableDiv td{
+	vertical-align:middle;
+	
+	//background-color:#e5e5e5;
+
+	border:1px solid #E4E4E4;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.tableDiv tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.tableDiv tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.tableDiv tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.tableDiv tr:first-child td{
+    
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#4c4c4c");	background: -o-linear-gradient(top,#4c4c4c,4c4c4c);
+
+	background-color:#DDDDDD;
+	border:0px solid #E4E4E4;
+	text-align:left;
+	border-width:0px 0px 1px 1px;
+	font-size:13px;
+	font-family:Arial;
+	//font-weight:bold;
+	//color:#ffffff;
+}
+.tableDiv tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.tableDiv tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+.listTab tr:first-child td  {
+    text-align: center;
+}
+.listTab td{
+    text-align: center;
+} 
+.sym_links a{
+    margin: 0px 2px;
+}
+.sym_links img
+{
+    width: 20px;
+    height: 20px;
+}

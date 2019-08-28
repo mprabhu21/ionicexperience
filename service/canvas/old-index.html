@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Sitemap | West Orchards</title>
+
+	<style type="text/css">
+		body {
+            background-color: ivory;
+            
+        }
+        canvas {
+            border:1px solid red;
+            /*background: transparent url("mall-ground.jpg") no-repeat 0 0;*/            
+        }
+        .newcanvas{        	
+        	height: 1000px;
+        	width: 1200px;
+        	border: 1px solid black;
+        	float: left;
+        }
+        body{
+        	width: 100%;
+        	height: 1500px;
+        }
+        .container {
+		  height: 150%;
+		  overflow:hidden;
+		  padding:10px;
+		  border:dashed 2px #000;
+		}
+      	canvas {
+		  background:#c0c0c0;		  
+		  /*width:100%;
+		  height:150%;*/
+		}  
+	</style>
+</head>
+<body>
+<div class="container">
+	<canvas id="mycanvas"></canvas>
+</div>	
+
+<!-- <br/>
+<button id="clear">Clear Canvas</button> -->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="require.js"></script>
+	<!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+	<script type="text/javascript">
+		
+			var canvas = document.getElementById("mycanvas");
+			var ctx = canvas.getContext("2d");
+			// canvas.height = ctx.clientHeight;
+	  //       canvas.width = ctx.clientWidth;
+	  		canvas.height = window.innerHeight;
+	        canvas.width = window.innerWidth;	        	        
+	        var canvasMouseX;
+	        var canvasMouseY;
+	        var canvasOffset = $("#mycanvas").offset();	        
+	        var offsetX = canvasOffset.left;
+	        var offsetY = canvasOffset.top;
+	        var storedLines = [];
+	        var startX = 0;
+	        var startY = 0;
+	        var radius = 7;
+	        console.log('test',canvasOffset);
+	        
+	        ctx.strokeStyle = "orange";
+        	ctx.font = '12px Arial';
+        
+        
+		/*var background = new Image();
+		background.src = "http://localhost/prabhu/westorchards/admin/mall-ground.jpg";
+		background.onload = function(){
+		    ctx.drawImage(background,0,100);   
+		}*/
+
+
+        $("#mycanvas").mousedown(function (e) {
+            handleMouseDown(e);
+        });
+
+        function handleMouseDown(e) {
+            canvasMouseX = parseInt(e.clientX - offsetX);
+            canvasMouseY = parseInt(e.clientY - offsetY);
+            console.log('X', canvasMouseX);
+            console.log('Y', canvasMouseY);
+            // Put your mousedown stuff here
+            if (hitStartCircle(canvasMouseX, canvasMouseY)) {
+                fillPolyline();
+                return;
+            }
+            storedLines.push({
+                x: canvasMouseX,
+                y: canvasMouseY
+            });
+            if (storedLines.length == 1) {
+                startX = canvasMouseX;
+                startY = canvasMouseY;
+                ctx.fillStyle = "green";
+                ctx.beginPath();
+                ctx.arc(canvasMouseX, canvasMouseY, radius, 0, 2 * Math.PI, false);
+                ctx.fill();
+            } else {
+                var c = storedLines.length - 2;
+                ctx.strokeStyle = "orange";
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(storedLines[c].x, storedLines[c].y);
+                ctx.lineTo(canvasMouseX, canvasMouseY);
+                ctx.stroke();
+            }
+        }
+
+        function hitStartCircle(x, y) {
+            var dx = x - startX;
+            var dy = y - startY;
+            return (dx * dx + dy * dy < radius * radius)
+        }
+
+        function fillPolyline() {
+            ctx.strokeStyle = "red";
+            ctx.fillStyle = "blue";
+            ctx.lineWidth = 3;
+            //ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.moveTo(storedLines[0].x, storedLines[0].y);
+            for (var i = 0; i < storedLines.length; i++) {
+                ctx.lineTo(storedLines[i].x, storedLines[i].y);
+            }
+            console.log(storedLines);
+            var obj = {
+			    name: 'Ram',
+			    score: 100
+			}; 
+			saveJson();
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            storedLines = [];
+        }
+        
+        function saveJson(){
+        	var fs = require("fs");
+			var sampleObject = {
+			    a: 1,
+			    b: 2,
+			    c: {
+			        x: 11,
+			        y: 22
+			    }
+			};
+
+			fs.writeFile("./object.json", JSON.stringify(sampleObject), (err) => {
+			    if (err) {
+			        console.error(err);
+			        return;
+			    };
+			    console.log("File has been created");
+			});
+        }
+        $("#clear").click(function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            storedLines = [];
+        });
+	</script>
+</body>
+</html>
